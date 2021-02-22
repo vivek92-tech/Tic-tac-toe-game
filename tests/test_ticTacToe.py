@@ -2,8 +2,6 @@
 from tickTacToe import TicTacToe
 import pytest
 
-
-
 @pytest.fixture
 def ttt_obj():
    ttt_obj = TicTacToe()
