@@ -1,5 +1,5 @@
 """
-This program contains the logic of tick tac toe game along with the following custom methods 
+This program contains the logic of tic tac toe game along with the following custom methods 
 play_tick_tac_toe() - main logical flow of the program
 display_board() - to display the current status of the board
 clear_board() -  to clear the board and put spaces on each place
@@ -164,7 +164,7 @@ class TicTacToe:
     # this method contains the logical flow of the program
     def play_tick_tac_toe(self):
         
-        print ("Welcome to Tick Tack Toe game \n")
+        print ("Welcome to Tic Tack Toe game \n")
         self.display_board()
         print ("Enter player-1 choice") 
         players_dict= self.select_symbol()  # It will call select_symbole method and save the choices of player-1 and player-2 in a dictionary
@@ -217,7 +217,7 @@ class TicTacToe:
                 turn = False
                 continue
 
-# this main method will create an object of TickTacToe class and keep on calling  play_tick_tac_toe() untill the user wishes to play the game
+# this main method will create an object of TicTacToe class and keep on calling  play_tick_tac_toe() untill the user wishes to play the game
 if __name__ == '__main__':
     obj = TicTacToe()
     choice= obj.play_tick_tac_toe()
