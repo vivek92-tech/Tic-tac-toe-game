@@ -15,7 +15,7 @@ Note: I am not going to use enumeration class members in my program because my l
 """
 
 
-#from enum import Enum
+# from enum import Enum
 
 class TicTacToe:
     """ Not goin to use the enumeration STATES class in my main logic of the program 
@@ -28,7 +28,9 @@ class TicTacToe:
     
     """ First create a board using a 2d List, initially the board contains empty spaces, later on as the player will play the game
     we will put either 'X' or 'O' in those empty spaces """
-    board=[[' ', ' ', ' '],
+    # default constructor
+    def __init__(self):
+        self.board=[[' ', ' ', ' '],
            [' ', ' ', ' '],
            [' ', ' ', ' ']]
     
@@ -45,10 +47,6 @@ class TicTacToe:
         for i in range(3):
             for j in range(3):
                 self.board[i][j]= " "
-    
-    # default constructor
-    def __init__(self):
-        return
 
     #this method is used to place the player symbol on the board
     def place_marker(self, symbol, row, column):
