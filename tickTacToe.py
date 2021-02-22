@@ -1,13 +1,12 @@
 """
-This program program contains the logic of tick tac toe game
-It comtains the following custom methods 
+This program contains the logic of tick tac toe game along with the following custom methods 
 play_tick_tac_toe() - main logical flow of the program
 display_board() - to display the current status of the board
 clear_board() -  to clear the board and put spaces on each place
 place_maker() - to place the player symbol on the board
 winner() - to declare the winner between player-1 and player-2
 game_result() - to check if there is a winner between player-1 and player-2
-select_symbol() - to assign symbol 'x' or 'o' to player-1 and remaining choice symbole to player-2
+select_symbol() - to assign symbol 'x' or 'o' to player-1 and remaining choice symbol to player-2
 select_position() - to select the rows and column in between 1-3 for current player
 play_again() - checks if user wants to play the game again
 
@@ -65,7 +64,7 @@ class TicTacToe:
         else:
             print("Player-2 has won the game with symbole= "+players_dict['player-2'])
             
-    #this method is used to find if someone has won either by row wise or column wise or diagonally  
+   #this method is used to find if someone has won the game, either by row wise rule or column wise rule or diagonal rule 
     def game_result(self, players_dict):
 
         # first row comparison
