@@ -9,21 +9,10 @@ game_result() - to check if there is a winner between player-1 and player-2
 select_symbol() - to assign symbol 'x' or 'o' to player-1 and remaining choice symbol to player-2
 select_position() - to select the rows and column in between 1-3 for current player
 play_again() - checks if user wants to play the game again
-
-Note: I am not going to use enumeration class members in my program because my logic dosen't require given template enumeration variables with those pre defined values 
 """
 
 
-# from enum import Enum
-
 class TicTacToe:
-    """ Not goin to use the enumeration STATES class in my main logic of the program 
-    class STATES(Enum):
-        CROSS_TURN = 0
-        NAUGHT_TURN = 1
-        DRAW = 2
-        CROSS_WON = 3
-        NAUGHT_WON = 4 """
     
     """ First create a board using a 2d List, initially the board contains empty spaces, later on as the player will play the game
     we will put either 'X' or 'O' in those empty spaces """
